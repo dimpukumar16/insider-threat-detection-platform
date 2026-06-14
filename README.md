@@ -1,34 +1,66 @@
 # Insider Threat Detection Platform
 
-An Explainable Insider Threat Detection Platform built for **Societe Generale Hackathon 2026 – PS4: Data Access Audit & Insider Threat Detection**.
+An explainable cybersecurity platform for detecting suspicious data access patterns, insider threats, privilege misuse, and potential data exfiltration attempts.
 
-## Team
-
-**Team Name:** Infinity One
-
-**Member:** Dimpu Kumar
+The platform combines behavioral analytics, peer-group intelligence, risk scoring, blast-radius assessment, and AI-assisted investigation narratives to help security teams prioritize and investigate high-risk activities.
 
 ---
 
-## Problem Statement
+## Features
 
-Organizations generate thousands of data access events daily, making it difficult for security teams to identify insider threats, unauthorized access, privilege misuse, and data exfiltration attempts.
+### Behavioral Profiling
 
-Our solution provides explainable threat detection using behavioral analytics, peer-group intelligence, risk scoring, and AI-assisted investigation support.
+Builds historical user baselines using:
 
----
+* Access patterns
+* Resource usage
+* Time affinity
+* Activity frequency
 
-## Key Features
+### Behavioral Drift Detection
 
-* Behavioral Drift Detection
-* Peer Group Deviation Analysis
-* Multi-Layer Threat Detection
-* Kill Chain Detection
-* Risk Scoring & Prioritization
-* Blast Radius Analysis
-* AI Investigation Narratives
-* Executive Incident Reports
-* Security Analytics Dashboard
+Measures deviations from a user's historical behavior to identify suspicious activities.
+
+### Peer Group Analysis
+
+Compares user behavior against peers with similar departments and job roles.
+
+### Multi-Layer Threat Detection
+
+Detects:
+
+* Stale account activity
+* Unauthorized resource access
+* Privilege violations
+* High-sensitivity off-hours access
+* Suspicious activity sequences
+
+### Risk Scoring Engine
+
+Calculates weighted risk scores using:
+
+* Rule severity
+* Behavioral drift
+* Peer deviation
+* Data sensitivity
+* Kill-chain evidence
+
+### Blast Radius Analysis
+
+Estimates:
+
+* Systems impacted
+* Records exposed
+* Business impact
+
+### AI Investigation Narratives
+
+Generates:
+
+* Investigation summaries
+* Business context
+* Recommended actions
+* Executive reports
 
 ---
 
@@ -63,6 +95,26 @@ Dashboard & Reporting
 
 ---
 
+## Dashboard Modules
+
+### Threat Alerts
+
+Prioritized alert management and investigation.
+
+### User Accounts Audit
+
+User profile analysis and access governance.
+
+### Security Analytics
+
+Risk visualization, heatmaps, and trend analysis.
+
+### Executive Reports
+
+Printable incident investigation reports.
+
+---
+
 ## Technology Stack
 
 ### Backend
@@ -79,50 +131,10 @@ Dashboard & Reporting
 * JavaScript
 * Chart.js
 
-### AI Layer
+### AI
 
 * Google Gemini API
 * Template Fallback Engine
-
----
-
-## Dashboard Modules
-
-### Threat Alerts
-
-Investigate prioritized security alerts with risk scores and explanations.
-
-### User Accounts Audit
-
-Review user profiles, privileges, approved systems, and inactivity history.
-
-### Security Analytics
-
-Organization-wide threat visibility through charts and heatmaps.
-
-### Executive Reports
-
-Generate printable incident investigation reports.
-
----
-
-## Dataset
-
-Available Files:
-
-* user_profiles.csv
-* data_access_logs.csv
-
-### Note
-
-The problem statement referenced:
-
-* user_profile_labels.csv
-* data_access_labels.csv
-
-However, these ground-truth label files were not included in the dataset package available to participants.
-
-Therefore, supervised evaluation metrics such as Precision, Recall, and F1 Score could not be reproduced locally.
 
 ---
 
@@ -130,6 +142,7 @@ Therefore, supervised evaluation metrics such as Precision, Recall, and F1 Score
 
 ```bash
 git clone https://github.com/dimpukumar16/insider-threat-detection-platform.git
+
 cd insider-threat-detection-platform
 
 pip install -r requirements.txt
@@ -147,21 +160,14 @@ http://127.0.0.1:5000
 
 ## Future Enhancements
 
-* Real-Time Streaming Detection
-* SIEM Integration
-* Automated Response Actions
-* Advanced LLM Investigation Assistant
-* Cross-System Threat Correlation
+* Real-time streaming detection
+* SIEM integration
+* Automated response actions
+* Continuous learning baselines
+* Cross-system threat correlation
 
 ---
 
-## Project Deliverables
+## License
 
-* Source Code
-* Documentation
-* Presentation
-* Demo Video
-
----
-
-Developed for **Societe Generale Hackathon 2026**.
+This project is intended for educational, research, and demonstration purposes.
