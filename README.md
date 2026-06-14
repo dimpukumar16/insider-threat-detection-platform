@@ -6,6 +6,14 @@ The platform combines behavioral analytics, peer-group intelligence, risk scorin
 
 ---
 
+## The Challenge
+
+Enterprises generate millions of daily data access events across databases, cloud clusters, and file systems. Legitimate operations hide malicious anomalies, such as compromised credentials, pre-resignation data exfiltrations, and policy violations. 
+
+Traditional security systems rely on naive static rules that produce over **80% false positive rates**, causing severe analyst alert fatigue while real threats go unnoticed for weeks or months.
+
+---
+
 ## Features
 
 ### Behavioral Profiling
