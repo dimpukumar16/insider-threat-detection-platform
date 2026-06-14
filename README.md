@@ -158,24 +158,4 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open:
 
-```text
-http://127.0.0.1:5000
-```
-
----
-
-## Future Enhancements
-
-* Real-time streaming detection
-* SIEM integration
-* Automated response actions
-* Continuous learning baselines
-* Cross-system threat correlation
-
----
-
-## License
-
-This project is intended for educational, research, and demonstration purposes.
