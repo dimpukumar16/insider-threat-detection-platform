@@ -52,6 +52,15 @@ AI Security Analyst Layer
 Dashboard & Reporting
 ```
 
+### 📂 File Map
+* **[app.py](app.py)**: Flask backend API serving metrics, alerts database, chronological timeline segments, and persisting triage actions.
+* **[src/detector.py](src/detector.py)**: Pipeline engine orchestrator. Manages ingestion, enrichment, behavioral baselines, threat rule signatures, sequence kill chains, risk scoring weights, and blast radius calculation.
+* **[src/llm_explainer.py](src/llm_explainer.py)**: Gemini API client integration for automated AI incident summary generation (with robust local template failover).
+* **[static/](static/)**: Glassmorphism console assets:
+  * **[index.html](static/index.html)**: Structural layout (Feed log, user profile database, analytics, metrics validation tab, detail modal overlays, and report prints).
+  * **[app.js](static/app.js)**: Controller script (API data loading, Chart.js integrations, modal toggles, and printing templates).
+  * **[style.css](static/style.css)**: Stylesheet (dark-theme theme, grids, heatmap grids, timeline cards, and media print directives).
+
 ---
 
 ## Technology Stack
